@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.codepath.snapmap.PostCreationActivity"
+        android:background="@color/colorPrimaryLight">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Image Description (optional)"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvDescription"
+            android:maxLines="3"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@+id/tvAction"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:backgroundTint="@color/colorPrimaryLight"
+            android:id="@+id/viewImage"
+            android:src = "@drawable/image_placeholder"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="...saw a flower that looked like MJ"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@id/viewImage"
+            android:id="@+id/tvAction"
+            android:maxLines="3" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDescription"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_style"
+            android:textColor="#000000"
+            android:focusable="false"
+            android:hint="Location"
+            android:id="@+id/tvLocation" />
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinCategory"
+            android:layout_below="@id/tvLocation"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:entries="@+array/ordering_arrays"
+            android:layout_marginTop="50dp"
+            android:spinnerMode="dialog" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinPrivacy"
+            android:gravity="center"
+            android:entries="@+array/privacy_arrays"
+            android:layout_below="@id/tvLocation"
+            android:layout_marginTop="110dp"
+            android:spinnerMode="dialog" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activate Challenge Option"
+            android:layout_below="@id/tvLocation"
+            android:layout_marginTop="240dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="onChallenge"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/button4"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="onSubmit"
+            android:layout_below="@id/tvLocation"
+            android:layout_marginTop="330dp"/>
+
+    </RelativeLayout>
+</ScrollView>

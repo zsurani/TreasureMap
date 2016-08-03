@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.codepath.snapmap.LoginActivity"
+    android:clickable="true">
+
+
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ivLoginBackground"
+    android:src="@drawable/front_screen_3"
+    android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:alpha="0.50"
+        android:src="@android:color/black"
+        android:layout_marginTop="100dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:id="@+id/tvTitle"
+        android:textSize="60sp"
+        android:textColor="#ffba1f"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Where Hidden Treasures Await..."
+        android:id="@+id/tvSlogan"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="#ffba1f"
+        android:layout_marginTop="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!--<ImageButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/fb_login"-->
+        <!--android:id="@+id/btnLogin"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="110dp" />-->
+
+    <!--<Button-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/btnLogin"-->
+        <!--android:drawableLeft="@drawable/fb8"-->
+        <!--android:background="@null"-->
+        <!--style="?android:attr/borderlessButtonStyle"-->
+        <!--android:textColor="#eeeeee"-->
+        <!--android:text="Facebook"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="82dp" />-->
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnLogin"
+        android:background="@drawable/fb_ic"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginBottom="132dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/profile_image"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

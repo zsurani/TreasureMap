@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/timeline"
+            android:icon="@drawable/main_timeline"
+            android:title="Timeline" />
+        <item
+            android:id="@+id/createPost"
+            android:icon="@drawable/create_post"
+            android:title="Create Post" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/bucketList"
+            android:icon="@drawable/bucketlist"
+            android:title="BucketList" />
+
+        <item
+            android:id="@+id/challengeList"
+            android:icon="@drawable/ic_challenge"
+            android:title="ChallengeList" />
+    </group>
+</menu>

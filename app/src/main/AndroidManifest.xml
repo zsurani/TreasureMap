@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.codepath.snapmap">
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-feature android:name="android.hardware.camera"></uses-feature>
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".ParseApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_stat_onesignal_default"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Currently api key is mines (so can utilize map in profile); have to switch to Mo's Api key if I want autocompletion -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="AIzaSyApi7Z81IFAkKYEbwAGNqwMt1-3Gsa-TRM" /> -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCz90rPhxjZq2817eltxwq7f4ggo83UbvQ" />
+
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.maps.v2.API_KEY" -->
+        <!-- android:value="AIzaSyApi7Z81IFAkKYEbwAGNqwMt1-3Gsa-TRM" /> -->
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".TimelineActivity" />
+        <activity android:name=".BucketActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".FinalProfileActivity" />
+        <activity android:name=".PostCreationActivity" />
+        <activity android:name=".PlacesAutoCompleteActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".FilterActivity" />
+        <activity android:name=".UserProfileActivity" />
+        <activity android:name=".FilteredTimelineActivity" />
+        <activity android:name=".DetailBucketActivity" />
+        <activity android:name=".DirectionsMap" />
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".DetailTimelineActivity" />
+        <activity android:name=".ChallengeActivity" />
+        <activity android:name=".ChallengeGeneration" />
+        <activity android:name=".OptionalChallenge"></activity>
+
+        <service android:name=".geofencing.GeofenceService" android:exported="true" android:enabled="true"/>
+
+    </application>
+
+</manifest>

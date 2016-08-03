@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codepath.snapmap.EditProfileActivity"
+    android:background="@color/colorPrimaryLight">
+
+    <ImageView
+        android:id="@+id/ivBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_placeholder"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ivProfile"
+        android:src="@drawable/profile"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zahra Surani"
+        android:hint="Enter your full name"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_below="@id/ivProfile"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter a username"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:id="@+id/tvUserName"
+        android:layout_below="@+id/tvName"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am interning at Facebook for the summer, and I love it here"
+        android:textColor="#fff"
+        android:id="@+id/tvBio"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tvUserName"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+ <!--/>-->
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="San Francisco, Oakland, Nashville"-->
+        <!--android:id="@+id/tvFav"-->
+        <!--android:layout_below="@+id/textView3"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+
+    <TextView
+        android:paddingLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:layout_below="@id/ivBackgroundImage"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView6" />
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter an email address"
+        android:text="suranizahra@gmail.com"
+        android:id="@+id/tvEmail"
+
+        android:layout_below="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number:"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/tvEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(408)828-2526"
+        android:hint="Enter a phone number"
+        android:gravity="center"
+        android:id="@+id/tvPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView7" />
+
+    <Button
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:onClick="onSave"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/button2"
+        android:onClick="onCancel"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

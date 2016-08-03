@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.codepath.snapmap.FilterActivity"
+    android:background="@color/colorPrimaryLight">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:width="100dp"
+        android:id="@+id/etUsername"
+        android:paddingTop="150dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnFilter"
+        android:layout_alignEnd="@+id/btnFilter"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Advanced Search"
+        android:id="@+id/tvSearch"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etLocation"
+        android:width="500dp"
+        android:focusable="false"
+        android:layout_above="@+id/imageView3"
+        android:layout_alignLeft="@+id/button13"
+        android:layout_alignStart="@+id/button13"
+        android:layout_below="@+id/etUsername" />
+
+    <Button
+        android:id="@+id/btnFilter"
+
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+
+        android:layout_width="144dp"
+        android:layout_height="45dp"
+        android:text="Submit"
+        android:onClick="onFilter"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center" />
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Submit"-->
+    <!--android:id="@+id/btnFilter"-->
+    <!--android:onClick="onFilter"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true" />-->
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_user"
+        android:id="@+id/imageView"
+
+        android:layout_alignBottom="@+id/etUsername"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_loca"
+        android:id="@+id/imageView2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/ic_cate"
+        android:layout_alignBottom="@+id/button13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!--<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:id="@+id/radioGroup"-->
+    <!--android:layout_above="@+id/btnFilter"-->
+    <!--android:layout_alignLeft="@+id/etLocation"-->
+    <!--android:layout_alignStart="@+id/etLocation"-->
+    <!--android:layout_marginBottom="41dp">-->
+    <!--<RadioButton android:id="@+id/nature"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/nature"-->
+    <!--android:onClick="onRadioButtonClicked"-->
+    <!--android:drawableLeft="@drawable/ic_nature"/>-->
+    <!--<RadioButton android:id="@+id/food"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/food"-->
+    <!--android:onClick="onRadioButtonClicked"-->
+    <!--android:drawableLeft="@drawable/ic_food"/>-->
+    <!--<RadioButton android:id="@+id/landmark"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/landmark"-->
+    <!--android:onClick="onRadioButtonClicked"-->
+    <!--android:drawableLeft="@drawable/ic_landmark"/>-->
+    <!--<RadioButton android:id="@+id/entertainment"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/entertainment"-->
+    <!--android:onClick="onRadioButtonClicked"-->
+    <!--android:drawableLeft="@drawable/ic_entertain"/>-->
+    <!--<RadioButton android:id="@+id/misc"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/misc"-->
+    <!--android:onClick="onRadioButtonClicked"-->
+    <!--android:drawableLeft="@drawable/ic_misc"/>-->
+    <!--</RadioGroup>-->
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchTime"
+        android:layout_below="@+id/tvSearch"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/switchTime"
+        android:layout_marginRight="10dp"
+        android:paddingTop="40dp"
+        android:text="Recent"
+        android:textColor="#00000f"
+        android:layout_marginTop="42dp"
+        android:id="@+id/textView13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/switchTime"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="40dp"
+        android:text="Top"
+        android:textColor="#00000f"
+        android:layout_marginTop="42dp"
+        android:id="@+id/textView14" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchType"
+        android:layout_below="@+id/switchTime"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/switchType"
+        android:layout_marginRight="10dp"
+        android:text="All"
+        android:textColor="#00000f"
+        android:paddingTop="40dp"
+        android:layout_marginTop="68dp"
+        android:id="@+id/textView10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/switchType"
+        android:layout_marginLeft="10dp"
+        android:text="Following"
+        android:textColor="#00000f"
+        android:paddingTop="40dp"
+        android:layout_marginTop="68dp"
+        android:id="@+id/textView12" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nature"
+        android:drawableLeft="@drawable/ic_nature"
+        android:id="@+id/button5"
+        android:background="@drawable/button_background"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_above="@+id/button14"
+        android:layout_alignLeft="@+id/button12"
+        android:layout_alignStart="@+id/button12" />
+    <!--android:onClick="onNature"-->
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food"
+        android:id="@+id/button11"
+        android:drawablePadding="-20dp"
+        android:drawableLeft="@drawable/ic_food"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_below="@+id/button14"
+        android:background="@drawable/button_background"
+        android:layout_marginRight="100dp"
+        android:layout_alignLeft="@+id/etUsername"
+        android:layout_alignStart="@+id/etUsername" />
+    <!--android:onClick="onFood"-->
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Landmark"
+        android:id="@+id/button12"
+        android:background="@drawable/button_background"
+        android:drawableLeft="@drawable/ic_landmark"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_above="@+id/button5"
+        android:layout_alignLeft="@+id/button11"
+        android:layout_alignStart="@+id/button11" />
+    <!--android:onClick="onLandmark"-->
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entertainment"
+        android:id="@+id/button13"
+        android:background="@drawable/button_background"
+        android:drawableLeft="@drawable/ic_entertain"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_above="@+id/button12"
+        android:layout_alignLeft="@+id/button12"
+        android:layout_alignStart="@+id/button12" />
+    <!--android:onClick="onEntertain"-->
+
+
+    <Button
+        android:layout_width="5dp"
+        android:layout_height="wrap_content"
+        android:text="Misc"
+        android:drawableLeft="@drawable/ic_misc"
+        android:id="@+id/button14"
+        android:drawablePadding="-20dp"
+        android:width="30dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/button_background"
+        android:layout_above="@+id/btnFilter"
+        android:layout_alignLeft="@+id/button11"
+        android:layout_alignStart="@+id/button11"
+        android:layout_alignRight="@+id/button5"
+        android:layout_alignEnd="@+id/button5" />
+
+    <!--android:onClick="onMisc"-->
+
+</RelativeLayout>

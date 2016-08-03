@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Treasure Map</string>
+    <string name="facebook_app_id">903951899750543</string>
+    <string name="fb_login_protocol_scheme">fbAPP_ID</string>
+    <string name="username">Username</string>
+    <string name="description">This is a great picture of the Golden Gate Bridge!</string>
+    <string name="btnLogin">Login with Facebook</string>
+    <string name="SnapMap">SnapMap</string>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_closed">Drawer Closed</string>
+    <string name="follow">Follow</string>
+    <string name="autocomplete_hint">Where are you?</string>
+    <string name="to">to</string>
+    <string name="load_directions">Load Directions</string>
+    <string name="seeMap">See Map</string>
+    <string name="nature">nature</string>
+    <string name="food">food</string>
+    <string name="entertainment">entertainment</string>
+    <string name="misc">misc</string>
+    <string name="landmark">landmark</string>
+    <string name="add">Add</string>
+
+    <string name="Notification.Title">Bucketlist activity closeby!</string>
+    <string name="Notification.Text">Check out %1$s!!!</string>
+
+    <string-array name="ordering_arrays">
+        <item>Select a category</item>
+        <item>nature</item>
+        <item>food</item>
+        <item>landmark</item>
+        <item>entertainment</item>
+        <item>misc</item>
+    </string-array>
+
+    <string-array name="ordering_arrays_filter">
+        <item></item>
+        <item>nature</item>
+        <item>food</item>
+        <item>landmark</item>
+        <item>entertainment</item>
+        <item>misc</item>
+    </string-array>
+
+    <string-array name="privacy_arrays">
+        <item>Select a privacy option</item>
+        <item>public</item>
+        <item>private</item>
+    </string-array>
+</resources>

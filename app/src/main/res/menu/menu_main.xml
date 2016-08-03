@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id = "@+id/editProfile"
+        app:showAsAction = "ifRoom"
+        android:title ="Profile">
+    </item>
+
+    <item
+        android:id = "@+id/createPost"
+        app:showAsAction = "ifRoom"
+        android:title ="Create Post">
+    </item>
+
+    <item
+        android:id = "@+id/timeline"
+        app:showAsAction = "ifRoom"
+        android:title ="Timeline">
+    </item>
+</menu>
